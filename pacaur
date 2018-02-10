@@ -1351,9 +1351,9 @@ MakePkgs() {
         fi
 
         if [[ $silent = true ]]; then
-            makepkg -sefc ${makeopts[@]} --noconfirm &>/dev/null
+            makepkg -sef ${makeopts[@]} --noconfirm &>/dev/null
         else
-            makepkg -sefc ${makeopts[@]} --noconfirm
+            makepkg -sef ${makeopts[@]} --noconfirm
         fi
 
         # error check
